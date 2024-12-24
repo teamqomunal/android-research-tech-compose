@@ -1,10 +1,12 @@
-package com.qomunal.opensource.androidresearch.ui.main
+package com.qomunal.opensource.androidresearch.ui.main.xml
 
 import android.os.Bundle
 import androidx.activity.viewModels
 import com.qomunal.opensource.androidresearch.common.base.BaseActivity
 import com.qomunal.opensource.androidresearch.common.ext.showToast
 import com.qomunal.opensource.androidresearch.databinding.ActivityMainBinding
+import com.qomunal.opensource.androidresearch.ui.main.MainRouter
+import com.qomunal.opensource.androidresearch.ui.main.MainViewModel
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
 

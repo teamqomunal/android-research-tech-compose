@@ -1,5 +1,6 @@
 package com.qomunal.opensource.androidresearch.ui.main
 
+import android.app.Activity
 import com.qomunal.opensource.androidresearch.common.base.BaseRouter
 
 /**
@@ -12,6 +13,6 @@ import com.qomunal.opensource.androidresearch.common.base.BaseRouter
  */
 
 
-class MainRouter(private val activity: MainActivity) : BaseRouter(activity) {
+class MainRouter(private val activity: Activity) : BaseRouter(activity) {
 
 }
