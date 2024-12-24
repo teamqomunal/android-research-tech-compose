@@ -1,6 +1,7 @@
-package com.qomunal.opensource.androidresearch.ui.main.xml
+package com.qomunal.opensource.androidresearch.ui.main
 
-import com.qomunal.opensource.androidresearch.common.base.BaseViewModel
+import android.app.Activity
+import com.qomunal.opensource.androidresearch.common.base.BaseRouter
 
 /**
  * Created by faisalamircs on 13/01/2024
@@ -11,6 +12,7 @@ import com.qomunal.opensource.androidresearch.common.base.BaseViewModel
  * -----------------------------------------
  */
 
-class MainViewModel : BaseViewModel() {
+
+class MainRouter(private val activity: Activity) : BaseRouter(activity) {
 
 }

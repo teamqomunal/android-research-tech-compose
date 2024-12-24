@@ -1,9 +1,8 @@
 package com.qomunal.opensource.androidresearch.ui.main.compose
 
-import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.viewModels
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
@@ -12,10 +11,19 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.leonranger.composeed.ui.theme.ComposeedTheme
+import com.qomunal.opensource.androidresearch.common.base.BaseComponentActivity
+import com.qomunal.opensource.androidresearch.ui.main.MainRouter
+import com.qomunal.opensource.androidresearch.ui.main.MainViewModel
 
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+class MainActivity : BaseComponentActivity() {
+
+    private val viewModel: MainViewModel by viewModels()
+
+    private val router: MainRouter by lazy {
+        MainRouter(this)
+    }
+
+    override fun initUI() {
         enableEdgeToEdge()
         setContent {
             ComposeedTheme {
@@ -28,6 +36,13 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+
+    override fun initObserver() {
+        viewModel.apply {
+
+        }
+    }
+
 }
 
 @Composable

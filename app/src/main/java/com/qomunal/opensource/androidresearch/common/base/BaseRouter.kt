@@ -1,6 +1,6 @@
 package com.qomunal.opensource.androidresearch.common.base
 
-import androidx.appcompat.app.AppCompatActivity
+import android.app.Activity
 
 /**
  * Created by faisalamircs on 13/01/2024
@@ -12,5 +12,5 @@ import androidx.appcompat.app.AppCompatActivity
  */
 
 
-abstract class BaseRouter(private val activity: AppCompatActivity) {
+abstract class BaseRouter(private val activity: Activity) {
 }
