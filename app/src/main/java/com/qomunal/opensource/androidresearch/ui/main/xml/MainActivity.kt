@@ -1,4 +1,4 @@
-package com.qomunal.opensource.androidresearch.ui.main
+package com.qomunal.opensource.androidresearch.ui.main.xml
 
 import android.os.Bundle
 import androidx.activity.viewModels
